@@ -1,0 +1,116 @@
+
+
+.container {
+  padding:3px;
+  border:1px solid #e6e6e6;
+  width:100%;
+  overflow:hidden;
+}
+.marquee{
+  display:block;
+position:relative;
+width:100%;
+height:100%;
+animation:scroll 5s linear infinite;
+padding:3px;
+}
+
+.marquee:hover {
+    animation-play-state: paused
+}
+
+.breaking {
+  width:100%;
+  height:100%;
+  background-color:red;
+  margin:3px;
+  float:left;
+}
+
+/* Make it move */
+@keyframes scroll{
+0% {left:800px;}
+100% {left:-800px;}
+}
+
+
+ @media screen and (max-width: 768px) {
+    #dabo {
+      flex-direction: row !important;
+    }
+
+    #dabo1{
+    	flex-direction: row !important;
+    	margin-top: 70px;
+    	margin-left: 15px;
+    }
+    #dabo2 {
+    	 flex-direction: column !important;
+    	 width:400px;
+    	 margin-top: 70px;
+    	 margin-left:fill;
+    }
+    .port-item1 {
+      width: 100%;
+    }
+  }
+
+
+.featurette-divider {
+  margin: 1.7rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+	justify-content: center;
+  font-weight: ;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+
+
+  .col-9 {
+    margin-top: 25px;
+  }
+  .col-3 {
+  	margin-top: 25px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+ 
+}
+.image-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.image-container img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+}
+
+
+.col-3 img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+hr{
+	height: 10px;
+}
